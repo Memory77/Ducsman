@@ -182,9 +182,24 @@ header {
   height: 80vh;
   width: 100%;
   color: #fff;
+  display: flex;
 }
 #chambre-des h3 {
   color: orange;
+}
+#chambre-des .des {
+  position: relative;
+}
+#chambre-des .des img {
+  width: 60%;
+}
+#chambre-des .text1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
 }
 
 #services {
@@ -214,100 +229,102 @@ header {
   background-color: rgb(75, 74, 74);
 }
 
-#accueil-section {
-  height: 800vh;
-  width: 80%;
-  float: right;
-  background-color: rgb(39, 39, 39);
-}
-#accueil-section p {
-  color: #868585;
-  text-align: justify;
-}
-
-#vitrine {
-  background-image: url("../../img/rooms/roomcomplet.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 80vh;
-  width: 100%;
-  text-align: center;
-  padding-top: 20%;
-}
-#vitrine h1, #vitrine h2 {
-  text-transform: uppercase;
-  color: white;
-  letter-spacing: 10px;
-  padding-bottom: 10px;
-}
-#vitrine h1 {
-  font-size: 35px;
-  padding-bottom: 30px;
-  font-weight: 600;
-}
-
-#about {
-  color: #fff;
+#contact-section {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  margin: 20px 10px 20px 20px;
+  justify-content: center;
+  background-color: rgb(39, 39, 39);
 }
-#about img {
-  width: 20%;
-  padding: 15px;
+
+h1 {
+  color: white;
 }
-#about h2 {
-  font-size: 40px;
+
+.dispo {
+  color: grey;
 }
-#about h3 {
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: orange;
-  padding: 10px;
+
+p {
+  color: grey;
+}
+
+.contactlink {
+  margin-top: -10px;
+  color: rgb(255, 187, 0);
+}
+
+.flaticon-phone {
+  display: flex;
+  flex-direction: row;
+  color: rgb(255, 187, 0);
   padding-top: 30px;
-}
-#about .about-des {
-  margin: 30px 100px;
-}
-#about .img1 {
-  padding-top: 100px;
-}
-
-#chambre-des {
-  height: 80vh;
-  width: 100%;
-  color: #fff;
-}
-#chambre-des h3 {
-  color: orange;
-}
-
-#services {
-  color: #fff;
-  background-color: rgb(58, 58, 58);
-  padding: 100px;
-  width: 80%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 400px);
-}
-#services img {
-  width: 100%;
-}
-#services h3, #services h2, #services p, #services a {
-  margin: 0 10%;
-  margin-top: 20px;
-}
-#services h3 {
-  color: orange;
-}
-#services h2 {
+  padding-right: 10px;
   font-size: 30px;
 }
-#services .item-service {
-  background-color: rgb(75, 74, 74);
+
+a {
+  color: rgb(255, 187, 0);
+}
+
+.flaticon-envelope {
+  display: flex;
+  flex-direction: row;
+  color: rgb(255, 187, 0);
+  padding-top: 30px;
+  padding-right: 10px;
+  font-size: 30px;
+}
+
+.flaticon-location-pin {
+  display: flex;
+  flex-direction: row;
+  color: rgb(255, 187, 0);
+  padding-top: 30px;
+  padding-right: 10px;
+  font-size: 30px;
+}
+
+.champ-id {
+  color: grey;
+}
+
+.btn-brown {
+  background-color: burlywood;
+  color: white;
+}
+
+input {
+  background-color: rgb(39, 39, 39);
+}
+
+textarea {
+  background-color: rgb(39, 39, 39);
+}
+
+#phonebox {
+  display: flex;
+  flex-direction: row;
+}
+
+#envelopbox {
+  display: flex;
+  flex-direction: row;
+}
+
+#locationbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.maps-ducsman {
+  padding-bottom: 50%;
+  position: relative;
+}
+
+.maps-ducsman iframe {
+  height: 350px;
+  width: 800px;
+  top: 70px;
+  padding-top: 50px;
+  margin: 0 -20%;
 }/*# sourceMappingURL=main.css.map */
