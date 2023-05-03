@@ -77,11 +77,31 @@
      height: 80vh;
      width: 100%;
      color: #fff;
+     display: flex;
      h3{
          color: orange;
      }
+     
+     .des{
+        position: relative;
+
+        img{
+            width: 60%;
+        }
+     }
+     .text1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 10px;
+      }
+
+
+   
  }
- 
+  
  
  
  
