@@ -1,1 +1,99 @@
-/*# sourceMappingURL=main.css.map */
+#contact-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(39, 39, 39);
+}
+
+h1 {
+  color: white;
+}
+
+.dispo {
+  color: grey;
+}
+
+p {
+  color: grey;
+}
+
+.contactlink {
+  margin-top: -10px;
+  color: rgb(255, 187, 0);
+}
+
+.flaticon-phone {
+  display: flex;
+  flex-direction: row;
+  color: rgb(255, 187, 0);
+  padding-top: 30px;
+  padding-right: 10px;
+  font-size: 30px;
+}
+
+a {
+  color: rgb(255, 187, 0);
+}
+
+.flaticon-envelope {
+  display: flex;
+  flex-direction: row;
+  color: rgb(255, 187, 0);
+  padding-top: 30px;
+  padding-right: 10px;
+  font-size: 30px;
+}
+
+.flaticon-location-pin {
+  display: flex;
+  flex-direction: row;
+  color: rgb(255, 187, 0);
+  padding-top: 30px;
+  padding-right: 10px;
+  font-size: 30px;
+}
+
+.champ-id {
+  color: grey;
+}
+
+.btn-brown {
+  background-color: burlywood;
+  color: white;
+}
+
+input {
+  background-color: rgb(39, 39, 39);
+}
+
+textarea {
+  background-color: rgb(39, 39, 39);
+}
+
+#phonebox {
+  display: flex;
+  flex-direction: row;
+}
+
+#envelopbox {
+  display: flex;
+  flex-direction: row;
+}
+
+#locationbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.maps-ducsman {
+  padding-bottom: 50%;
+  position: relative;
+}
+
+.maps-ducsman iframe {
+  height: 350px;
+  width: 800px;
+  top: 70px;
+  padding-top: 50px;
+  margin: 0 -20%;
+}/*# sourceMappingURL=main.css.map */
