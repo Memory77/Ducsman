@@ -84,12 +84,15 @@
      h3{
          color: orange;
      }
+
+     
      
      .des{
-       position: relative; 
+       /*position: relative; */
+       
 
         img{
-            width: 70%;
+            width: 90%;
         }
      }
      .text1 {
@@ -122,8 +125,15 @@
      
    
  }
-  
  
+ .img-des1{
+    margin-left: 10%;
+ }
+ .img-des2{
+    margin-left: 30px;
+    width: 30vh;
+ }
+
  
  
  
