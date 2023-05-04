@@ -1,0 +1,24 @@
+/* mettre le font-face */
+@font-face {
+    font-family: 'themify';
+    src: url('../../fonts/themify.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Flaticon';
+    src: url('../../fonts/Flaticon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-color: rgb(22, 22, 22);
+    font-family: 'MaPolice', sans-serif;
+}
+
+
+h1,h2,h3{
+    font-family: 'Flaticon';
+    font-weight: 100;
+}

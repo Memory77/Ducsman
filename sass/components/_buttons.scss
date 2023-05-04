@@ -6,3 +6,42 @@
     margin-top: 20px;
     cursor: pointer;
 }
+.btn{
+    color: #fff;
+}
+.btn-general {
+    border: #fff solid 2px;
+    padding: 12px 26px 12px 26px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.btn-white{
+    
+    background-color: transparent;
+    color: #fff;
+
+}
+
+.btn-brown{
+    
+    background-color: burlywood;
+    color: #fff;
+
+}
+
+.btn-brown:hover,
+    .btn-brown:focus {
+    background-color: rgb(206, 151, 83);
+    color: #41464b;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+    background-color: #fff;
+    color: #41464b;
+}
+
+a{
+    text-decoration: none;
+}
