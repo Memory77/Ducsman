@@ -10,6 +10,89 @@
     <link rel="stylesheet" href="css_icon/themify-icons.css">
 </head>
 <body>
+
+     <!-------------- NAVBAR ------------>
+     <header class="header">
+        <div class="header_mobile" onclick="togglemenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </div>
+    </header>
+
+    <nav class="nav-mobile">
+
+        <section class="top">
+
+            <div class="nav-mobile_profile">
+                <img src="img/logo_ducksman.png" alt="logo">
+            </div>
+
+            <ul class="nav-mobile_menu">
+
+                <li>
+                    <a href="#">
+                        Accueil
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        A propos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Chambres & Suites
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Restaurant
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Centre de bien être 
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Actualité
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Contact 
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="bottom">
+
+
+            <div class="nav-mobile_social">
+               <span class="flaticon-call" id="phone_head"></span>
+               <span>Informations & Réservations<br><span class="doree" >03 20 01 02 03</span></span>
+            </div>
+
+        </section>
+
+    </nav>
+    <div class="mobile-overlay" onclick="togglemenu()">
+    </div>
+
+
+
+
+    <!-------- page contact ------->
+
     <div id="contact-section">
         <div class="contact-left">
             <h1>Ducsman</h1>
@@ -72,6 +155,6 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.835382178993!2d2.288934275764582!3d48.86134940049919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fe39df5463f%3A0xb358c25f43492e83!2s23%20Av.%20des%20Nations%20Unies%2C%2075116%20Paris!5e0!3m2!1sfr!2sfr!4v1683108828845!5m2!1sfr!2sfr" 
             width="800" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-
+<script src="script.js"></script>
 </body>
 </html>

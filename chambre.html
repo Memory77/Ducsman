@@ -8,28 +8,194 @@
     <link rel="stylesheet" href="sass/main.css">
     <link rel="stylesheet" href="css_icon/flaticons.css">
     <link rel="stylesheet" href="css_icon/themify-icons.css">
+    <link rel="icon" type="img/png" href="img/favicon.png">
+
+
 </head>
 
 <body>
 
-    <main>
+     <!-------------- NAVBAR ------------>
+     <header class="header">
+        <div class="header_mobile" onclick="togglemenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </div>
+    </header>
 
-        <div class="pic_head">
-            <img src="img/rooms/4.jpg" alt="Image Chambre Deluxe">
-            <h6>HÔTEL DE LUXE A PARIS</h6>
-            <h1>CHAMBRE DELUXE</h1>
-            
+    <nav class="nav-mobile">
+
+        <section class="top">
+
+            <div class="nav-mobile_profile">
+                <img src="img/logo_ducksman.png" alt="logo">
+            </div>
+
+            <ul class="nav-mobile_menu">
+
+                <li>
+                    <a href="#">
+                        Accueil
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        A propos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Chambres & Suites
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Restaurant
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Centre de bien être 
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Actualité
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Contact 
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="bottom">
+
+
+            <div class="nav-mobile_social">
+               <span class="flaticon-call" id="phone_head"></span>
+               <span>Informations & Réservations<br><span class="doree" >03 20 01 02 03</span></span>
+            </div>
+
+        </section>
+
+    </nav>
+    <div class="mobile-overlay" onclick="togglemenu()">
+    </div>
+
+
+    <!--------page chambre --------->
+
+    <main class="main_bedroom">
+
+        <div class="pichead_into">
+            <div class="pichead_stars"><span class="ti-star"> <span class="ti-star"> <span class="ti-star"> <span class="ti-star"> <span class="ti-star"></div>
+            <div class="pichead_title"><h6>HÔTEL DE LUXE A PARIS</h6></div>
+            <div class="pichead_subtitle"><h1>CHAMBRE DELUXE</h1></div>
         </div>
 
-        <span class="flaticon-wifi"></span>
 
-        <div class="bloctext_left">
+    <article>
+        <div class="blocktext_title">
+        <h6>DUCSMAN</h6>
+        <h1>Chambre Deluxe</h1>
+        </div>
+        <div class="blocktext">
+            <div class="blocktext_left">
+                <div class="blocktext_left_room">
+                    <p>
+                        Notre chambre deluxe offre un niveau de confort et de luxe supérieur aux chambres 
+                        standard de l'hôtel. Elle est plus spacieuse que les chambres standard, offrant plus 
+                        d'espace pour se détendre et se déplacer confortablement.                       
+                    </p>
+                    <p>
+                        Elle est équipée d'un lit king-size ou queen-size de haute qualité, avec des draps et 
+                        des oreillers de qualité supérieure pour un confort maximal. Votre chambre est meublée 
+                        avec des pièces haut de gamme et des finitions de qualité, telles qu'une commode, une 
+                        table de chevet, un fauteuil ou un canapé, elle propose toutes les commodités dont vous 
+                        avez besoin pour un séjour confortable, comme une télévision haute définition, 
+                        un minibar, une cafetière, un coffre-fort, une connexion Wi-Fi gratuite et 
+                        climatisation individuelle.
+                    </p>
+                    <p>
+                        La salle de bain est équipée d'une douche à effet pluie, d'une baignoire, des serviettes
+                         moelleuses, des peignoirs et des chaussons.
+                    </p>
+                    <p>
+                        Enfin, votre chambre Deluxe offrent une vue imprenable sur la ville ou sur les environs de l'hôtel.
+                    </p>
+                </div>
 
+                <div class="blocktext_left_checks">
+                    <div class="blocktext_left_check1">
+                        <h3>Check-in</h3>
+                        <ul>
+                            <li><span class="ti-check" id="litlogo"></span>Check-in à partir de 9h00</li>
+                            <li><span class="ti-check" id="litlogo"></span>Check-in en ligne possible</li>
+                        </ul>
+                    </div>
+
+                    <div class="blocktext_left_check2">
+                        <h3>Check-out</h3>
+                        <ul>
+                            <li><span class="ti-check" id="litlogo"></span>Avant 12h00</li>
+                            <li><span class="ti-check" id="litlogo"></span>Check-out Express (supplément)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="blocktext_left_next">
+                    <h3>Instructions pour le check-in</h3>
+                    <p>
+                        Les invités reçoivent un email 5 jours avant l'arrivée prévue avec toutes les informations 
+                        nécessaires. Nos hôtes et hôtesses d'accueil pourront vous donner plus d'informations, 
+                        n'hésitez pas à les contacter avant votre arrivée
+                    </p>
+
+                    <h3>Animaux de compagnie</h3>
+                    <p>
+                        Pour le confort de tous, ils ne sont pas acceptés au sein de nos chambres
+                    </p>
+
+                    <h3>Enfants/bébés et lit supplémentaire</h3>
+                    <p>
+                       Les enfants sont les bienvenues et les bébés de moins de 2 ans sont accueillis gratuitement. 
+                       Un lit bébé peut vous être fourni gracieusement sur demande lors de votre réservation 
+                    </p>
+
+                    <input class="resnow" type="button" value="RESERVER MAINTENANT">
+                </div>
+            </div>
+        
+
+
+            <div class="blocktext_right">
+
+                <h3>Aménagements</h3>
+                <ul>
+                    <li><span class="flaticon-group" id="litlogo"></span>1-2 Personnes</li>
+                    <li><span class="flaticon-wifi" id="litlogo"></span>Wifi haut-débit gratuit</li>
+                    <li><span class="flaticon-clock-1" id="litlogo"></span>20 m<sup>2</sup></li>
+                    <li><span class="flaticon-breakfast" id="litlogo"></span>Petit-déjeuner buffet inclus</li>
+                    <li><span class="flaticon-towel" id="litlogo"></span>Serviettes fournies</li>
+                    <li><span class="flaticon-swimming" id="litlogo"></span>Accés à la piscine inclus</li>
+                </ul>
+
+            </div>
 
         </div>
-
+    </article>
     </main>
-    
+    <script src="script.js"></script>
 </body>
 
 </html>
