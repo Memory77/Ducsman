@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,10 +10,11 @@
     <link rel="stylesheet" href="css_icon/flaticons.css">
     <link rel="stylesheet" href="css_icon/themify-icons.css">
 </head>
+
 <body>
 
-     <!-------------- NAVBAR ------------>
-     <header class="header">
+    <!-------------- NAVBAR ------------>
+    <header class="header">
         <div class="header_mobile" onclick="togglemenu()">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-6 h-6">
@@ -88,73 +90,107 @@
     <div class="mobile-overlay" onclick="togglemenu()">
     </div>
 
-
-
+    <header class="header_fixe">
+        <img src="img/logo_ducksman.png" alt="logo_ducksman" class="logo_ducsman">
+        <ul class="liste_head">
+      <nav class="barre_nav"><ul class="liste_head">
+            <li class="li_head"> <a href="accueil.html" class="element_head">ACCUEIL</a></li>
+            <li class="li_head">A PROPOS </li>
+            <li class="li_head"> <a href="chambre.html" class="element_head">CHAMBRES & SUITES</a></li>
+            <li class="li_head">RESTAURANT</li>
+            <li class="li_head">CENTRE DE BIEN-ÊTRE</li>
+            <li class="li_head">ACTUALIT&Eacute;</li>
+            <li class="li_head"> <a href="contact.html" class="element_head">CONTACT</a></li>
+        </ul> <br>
+        </ul> <br> </nav>
+        <p class="info_head"><span id="phone_head" class="flaticon-call"></span>
+         <span class="text_head">Informations & Réservations <span class="color_head">03 20 01 02 03</span></span></p>
+    </header>
 
     <!-------- page contact ------->
 
     <div id="contact-section">
+
         <div class="contact-left">
             <h1>Ducsman</h1>
-            <p class="dispo">Nous sommes à votre disposition pour toute question relative à votre séjour<br>ou pour vous préparer le plus luxueux des voyages</p>
-                
-                <div id="phonebox">
-                    <span class="flaticon-phone"></span>
-                    <div class="phone-info">
-                        <p>Information & Réservation <br></p>
-                        <p class="contactlink"> <a href="tel:+33320010203">03 20 01 02 03</a></p>
-                    </div>
+            <p class="dispo">Nous sommes à votre disposition pour toute question relative à votre séjour<br>ou pour vous
+                préparer le plus luxueux des voyages</p>
+
+            <div id="phonebox">
+                <span class="flaticon-phone"></span>
+                <div class="phone-info">
+                    <p>Information & Réservation <br></p>
+                    <p class="contactlink"> <a href="tel:+33320010203">03 20 01 02 03</a></p>
                 </div>
+            </div>
 
-                <div id="envelopbox">
-                    <span class="flaticon-envelope"></span>
-                    <div class="mail-info">
-                        <p>E-mail<b> <p class="contactlink"> <a href="https://outlook.live.com/owa/">info@ducsman-group.com</a></p>
-                 </div>
-             </div>
+            <div id="envelopbox">
+                <span class="flaticon-envelope"></span>
+                <div class="mail-info">
+                    <p>E-mail<b>
+                            <p class="contactlink"> <a href="https://outlook.live.com/owa/">info@ducsman-group.com</a>
+                            </p>
+                </div>
+            </div>
 
-                <div id="locationbox">
+            <div id="locationbox">
                 <span class="flaticon-location-pin"></span>
                 <div class="loc-info">
-                <p>Adresse<br>23 rue des Nations Unies<br>75001 Paris</p>
+                    <p>Adresse<br>23 rue des Nations Unies<br>75001 Paris</p>
+                </div>
             </div>
-        </div> 
-    </div>
+        </div>
 
         <div class="contact-right">
             <h1>Restons en contact</h1>
             <form action="envoyer" method="post">
-                
-                    <label for="Votre nom"> <div class="champ-id"> Votre nom*</div></label>
-                    <input type="text id=" Votre nom="Votre nom" required>
 
-                    <label for="votre e-mail"> <div class="champ-id">Votre e-mail*</div></label>
-                    <input type="text id=" Votre e-mail="Votre e-mail" required>
+                <label for="Votre nom">
+                    <div class="champ-id"> Votre nom*</div>
+                </label>
+                <input type="text id=" Votre nom="Votre nom" required>
 
-                    <br>
+                <label for="votre e-mail">
+                    <div class="champ-id">Votre e-mail*</div>
+                </label>
+                <input type="text id=" Votre e-mail="Votre e-mail" required>
 
-                    <label for="votre numéro de téléphone"><div class="champ-id">Votre numéro de téléphone*</div></label>
-                    <input type="text id=" Votre numéro de téléphone="Votre numéro de téléphone" required>
+                <br>
 
-                    <label for="Sujet"><div class="champ-id">Sujet</div></label>
-                    <input type="text id="Sujet="Sujet" required>
+                <label for="votre numéro de téléphone">
+                    <div class="champ-id">Votre numéro de téléphone*</div>
+                </label>
+                <input type="text id=" Votre numéro de téléphone="Votre numéro de téléphone" required>
 
-                    <br>
+                <label for="Sujet">
+                    <div class="champ-id">Sujet</div>
+                </label>
+                <input type="text id=" Sujet="Sujet" required>
 
-                    <label for="Message"><div class="champ-id">Message*</div></label>
-                    <textarea id="Message" name="Message"
-                    rows="5" cols="33"></textarea>
+                <br>
+
+                <label for="Message">
+                    <div class="champ-id">Message*</div>
+                </label>
+                <textarea id="Message" name="Message" rows="5" cols="33"></textarea>
 
                 <p>
-                <button div class="btn-brown" type="envoyer">ENVOYER</button>
+                    <button div class="btn-brown" type="envoyer">ENVOYER</button>
                 </p>
             </form>
         </div>
-
+</div>
         <div class="maps-ducsman">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.835382178993!2d2.288934275764582!3d48.86134940049919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fe39df5463f%3A0xb358c25f43492e83!2s23%20Av.%20des%20Nations%20Unies%2C%2075116%20Paris!5e0!3m2!1sfr!2sfr!4v1683108828845!5m2!1sfr!2sfr" 
-            width="800" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.835382178993!2d2.288934275764582!3d48.86134940049919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fe39df5463f%3A0xb358c25f43492e83!2s23%20Av.%20des%20Nations%20Unies%2C%2075116%20Paris!5e0!3m2!1sfr!2sfr!4v1683108828845!5m2!1sfr!2sfr"
+                width="800" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-<script src="script.js"></script>
+    
+
+
+
+    <script src="script.js"></script>
 </body>
+
 </html>

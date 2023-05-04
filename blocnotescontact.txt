@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="sass/main.css">
+    <link rel="stylesheet" href="css_icon/flaticons.css">
+    <link rel="stylesheet" href="css_icon/themify-icons.css">
+</head>
+<body>
+    <div id="contact-section">
+        <div class="contact-left">
+            <h1>Ducsman</h1>
+            <p class="dispo">Nous sommes à votre disposition pour toute question relative à votre séjour<br>ou pour vous préparer le plus luxueux des voyages</p>
+                
+                <div id="phonebox">
+                    <span class="flaticon-phone"></span>
+                    <div class="phone-info">
+                        <p>Information & Réservation <br></p>
+                        <p class="contactlink"> <a href="tel:+33320010203">03 20 01 02 03</a></p>
+                    </div>
+                </div>
+
+                <div id="envelopbox">
+                    <span class="flaticon-envelope"></span>
+                    <div class="mail-info">
+                        <p>E-mail<b> <p class="contactlink"> <a href="https://outlook.live.com/owa/">info@ducsman-group.com</a></p>
+                 </div>
+             </div>
+
+                <div id="locationbox">
+                <span class="flaticon-location-pin"></span>
+                <div class="loc-info">
+                <p>Adresse<br>23 rue des Nations Unies<br>75001 Paris</p>
+            </div>
+        </div> 
+    </div>
+
+        <div class="contact-right">
+            <h1>Restons en contact</h1>
+            <form action="envoyer" method="post">
+                
+                    <label for="Votre nom"> <div class="champ-id"> Votre nom*</div></label>
+                    <input type="text id=" Votre nom="Votre nom" required>
+
+                    <label for="votre e-mail"> <div class="champ-id">Votre e-mail*</div></label>
+                    <input type="text id=" Votre e-mail="Votre e-mail" required>
+
+                    <br>
+
+                    <label for="votre numéro de téléphone"><div class="champ-id">Votre numéro de téléphone*</div></label>
+                    <input type="text id=" Votre numéro de téléphone="Votre numéro de téléphone" required>
+
+                    <label for="Sujet"><div class="champ-id">Sujet</div></label>
+                    <input type="text id="Sujet="Sujet" required>
+
+                    <br>
+
+                    <label for="Message"><div class="champ-id">Message*</div></label>
+                    <textarea id="Message" name="Message"
+                    rows="5" cols="33"></textarea>
+
+                <p>
+                <button div class="btn-brown" type="envoyer">ENVOYER</button>
+                </p>
+            </form>
+        </div>
+
+        <div class="maps-ducsman">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.835382178993!2d2.288934275764582!3d48.86134940049919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fe39df5463f%3A0xb358c25f43492e83!2s23%20Av.%20des%20Nations%20Unies%2C%2075116%20Paris!5e0!3m2!1sfr!2sfr!4v1683108828845!5m2!1sfr!2sfr" 
+            width="800" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+</body>
+</html>
+
+
+
+#contact-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(39, 39, 39);
+}
+
+h1{
+    color: white;
+}
+
+.dispo{
+    color: grey;
+}
+
+p{
+    color: grey;
+}
+
+.contactlink{
+    margin-top: -10px;
+    color:rgb(255, 187, 0);
+}
+
+
+.flaticon-phone{
+    display: flex;
+    flex-direction: row;
+    color: rgb(255, 187, 0);
+    padding-top: 30px;
+    padding-right: 10px;
+    font-size: 30px;
+}
+
+a{
+    color: rgb(255, 187, 0);
+}
+
+.flaticon-envelope{
+    display: flex;
+    flex-direction: row;
+    color: rgb(255, 187, 0);
+    padding-top: 30px;
+    padding-right: 10px;
+    font-size: 30px;
+}
+
+.flaticon-location-pin{
+    display: flex;
+    flex-direction: row;
+    color: rgb(255, 187, 0);
+    padding-top: 30px;
+    padding-right: 10px;
+    font-size: 30px;
+}
+
+.champ-id{
+    color: grey;
+}
+
+.btn-brown{
+    background-color: burlywood;
+    color: white;
+}
+
+input{
+    background-color: rgb(39, 39, 39);
+}
+
+textarea{
+    background-color: rgb(39, 39, 39);
+}
+
+#phonebox{
+    display: flex;
+    flex-direction: row;
+}
+
+#envelopbox{
+    display: flex;
+    flex-direction: row;
+}
+
+#locationbox{
+    display: flex;
+    flex-direction: row;
+}
+
+.maps-ducsman{
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.maps-ducsman iframe{
+    height: 350px;
+    width: 800px;
+    top: 70px;
+    padding-top: 50px;
+    margin: 0 -20%;
+}
