@@ -100,6 +100,10 @@ header {
   margin-bottom: 2vh;
 }
 
+a:hover {
+  color: #aa8453;
+}
+
 #phone_head {
   font-size: 4vh;
   color: #97764b;
@@ -238,11 +242,39 @@ header {
   background-color: rgb(75, 74, 74);
 }
 
+body {
+  margin: 0px;
+}
+
+.body_bedroom {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.body_bedroom .header_bedroom {
+  grid-area: 1/1/2/2;
+}
+.body_bedroom .main_bedroom {
+  grid-area: 1/2/2/3;
+}
+
 .main_bedroom {
   background-color: #222222;
 }
-.main_bedroom h1, .main_bedroom h6, .main_bedroom h3 {
+.main_bedroom .h1-2 {
   color: white;
+  margin: 4px;
+}
+.main_bedroom h3 {
+  color: white;
+  font-size: 25px;
+}
+.main_bedroom .h6-2 {
+  color: #aa8453;
+  margin: 8px;
+  margin-top: 50px;
 }
 .main_bedroom p, .main_bedroom li {
   color: #7d7d7d;
@@ -255,26 +287,34 @@ header {
 
 .pichead_into {
   background-image: url(/img/rooms/4.jpg);
-  background-size: 1700px 1400px;
-  background-position: right;
+  background-position-y: 90%;
   background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 400px;
-  margin-left: 0px;
+  padding: 200px;
   text-align: center;
+}
+.pichead_into .pichead_title {
+  color: white;
+  font-size: 25px;
+  letter-spacing: 6px;
+}
+.pichead_into .pichead_subtitle {
+  font-size: 35px;
+  letter-spacing: 20px;
 }
 .pichead_into .ti-star {
   color: #aa8453;
+  font-size: 30px;
 }
 
 .blocktext_title {
-  margin-left: 250px;
+  margin-left: 200px;
+  font-size: 30px;
 }
 
 .blocktext {
-  margin-left: 250px;
+  margin-left: 200px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
@@ -299,7 +339,7 @@ header {
   margin: 18px 18px;
 }
 .blocktext .blocktext_right {
-  padding-left: 20px;
+  padding-left: 150px;
 }
 .blocktext .blocktext_right ul {
   -webkit-padding-start: 0px;

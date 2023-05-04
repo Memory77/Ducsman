@@ -1,9 +1,45 @@
+body{
+    margin: 0px;
+}
+
+
+.body_bedroom{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    .header_bedroom{
+        grid-area: 1 / 1 / 2 / 2;
+
+    }
+
+    .main_bedroom{
+        grid-area: 1 / 2 / 2 / 3;
+
+    }
+}
+
+
 .main_bedroom{
 
     background-color: #222222;
 
-    h1, h6, h3{
+    .h1-2{
         color: white;
+        margin: 4px;
+    }
+
+    h3{
+        color: white;
+        font-size: 25px;
+    }
+
+    .h6-2{
+        color: #aa8453;
+        margin: 8px;
+        margin-top: 50px;
     }
 
     p, li{
@@ -21,28 +57,38 @@
 .pichead_into {
 
     background-image: url(/img/rooms/4.jpg);
-    background-size: 1700px 1400px;
-    background-position: right;
+    background-position-y: 90%;
     background-attachment: fixed;
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 400px;
-    margin-left: 0px;
+    padding: 200px;
     text-align: center;
+
+    .pichead_title{
+        color: white;
+        font-size: 25px;
+        letter-spacing: 6px;
+    }
+
+    .pichead_subtitle{
+        font-size: 35px;
+        letter-spacing: 20px;
+    }
 
     .ti-star{
         color: #aa8453;
+        font-size: 30px;
     }
 
 }
 
 .blocktext_title{
-    margin-left: 250px;
+    margin-left: 200px;
+    font-size: 30px;
 }
 
 .blocktext{
-    margin-left: 250px;
+    margin-left: 200px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
@@ -70,7 +116,7 @@
     }
 
     .blocktext_right{
-    padding-left: 20px;
+    padding-left: 150px;
         ul{
             padding-inline-start: 0px;
         }
