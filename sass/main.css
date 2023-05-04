@@ -68,13 +68,162 @@ a {
   text-decoration: none;
 }
 
-header {
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 50px;
+  width: calc(100% - 20px);
+  padding: 10px;
+  background-color: #1b1b1b;
+}
+
+.header_mobile {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1b1b1b;
+  cursor: pointer;
+  transition: 0.4s transform linear;
+}
+
+.header_mobile:hover {
+  transform: rotate(10deg);
+}
+
+.header svg {
+  width: 20px;
+  height: 20px;
+  stroke: #fff;
+}
+
+.mobile-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  z-index: 1;
+}
+
+.mobile-overlay.active {
+  display: block;
+}
+
+.nav-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 300px;
+  height: calc(100vh - 60px);
+  background-color: #1b1b1b;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateX(-100%);
+  transform: 0.4s transform cubic-bezier(1, -0.01, 0, 1);
+}
+
+.nav-mobile_profile {
+  text-align: center;
+}
+
+.nav-mobile_profile .name {
+  color: #aa8446;
+  font-size: 25px;
+  display: block;
+  margin: 6px 8px;
+}
+
+.nav-mobile_profile .actions {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 12px;
+  color: white;
+  word-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.nav-mobile_profile .actions a {
+  color: #fff;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+.nav-mobile_menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 87px;
+  margin-bottom: 32px;
+  padding-left: 25px;
+}
+
+.nav-mobile_menu li {
+  margin-bottom: 24px;
+}
+
+.nav-mobile_menu li:last-of-type {
+  margin-bottom: initial;
+}
+
+.nav-mobile_menu li a {
+  color: #868d8d;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav-mobile_social {
+  padding: 0;
+  list-style: none;
+  padding-bottom: 250px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: white;
+  line-height: 20px;
+  padding-left: 25px;
+}
+
+.nav-mobile.active {
+  transform: initial;
+}
+
+.doree {
+  color: #aa8446;
+  line-height: 1.2;
+  font-size: 20px;
+}
+
+#phone_head {
+  font-size: 4vh;
+  color: #aa8446;
+  align-self: center;
+}
+
+.header_fixe {
   display: flex;
   flex-direction: column;
   color: #6f6f6f;
   width: 20%;
+  height: 150vh;
   height: 180vh;
   background-color: #1b1b1b;
+  justify-content: baseline;
   align-items: center;
   position: fixed;
 }
@@ -129,6 +278,23 @@ a:hover {
   font-size: 0.9em;
 }
 
+@media screen and (min-width: 1100px) {
+  header {
+    display: none;
+  }
+  .nav-mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .header_fixe {
+    display: none;
+  }
+  .barre_nav {
+    display: none;
+  }
+}
+/* vitrine */
 #accueil-section {
   height: 800vh;
   width: 80%;
@@ -191,22 +357,43 @@ a:hover {
   padding-top: 100px;
 }
 
+/* description des chambres */
 #chambre-des {
-  height: 80vh;
-  width: 100%;
-  color: #fff;
-  display: flex;
-}
-#chambre-des h3 {
-  color: orange;
-}
-#chambre-des .des {
+  height: 100vh;
+  padding: 80px 0;
   position: relative;
 }
-#chambre-des .des img {
-  width: 60%;
+#chambre-des .text-title {
+  font-family: "Flaticon";
+  font-size: 25px;
 }
 #chambre-des .text1 {
+  position: absolute;
+  color: #fff;
+  padding: 29% 70% 0 5%;
+}
+#chambre-des .text2 {
+  position: absolute;
+  color: #fff;
+  padding-top: 29%;
+}
+#chambre-des .text3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+}
+#chambre-des .text4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+}
+#chambre-des .text5 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -215,6 +402,27 @@ a:hover {
   padding: 10px;
 }
 
+#premier-rang {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#premier-rang img {
+  width: 25%;
+  padding: 0 10px;
+}
+
+#deuxieme-rang {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#deuxieme-rang img {
+  width: 38%;
+  padding: 15px 10px;
+}
+
+/* services */
 #services {
   color: #fff;
   background-color: rgb(58, 58, 58);
@@ -223,7 +431,7 @@ a:hover {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 400px);
+  grid-template-rows: repeat(4, 1fr);
 }
 #services img {
   width: 100%;
@@ -260,6 +468,29 @@ body {
   grid-area: 1/2/2/3;
 }
 
+/* responsive css accueil */
+@media screen and (max-width: 1100px) {
+  #accueil-section {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1350px) {
+  #accueil-section .img1, #accueil-section .img2 {
+    display: none;
+  }
+  #accueil-section #chambre-des {
+    height: 130vh;
+  }
+  #accueil-section #chambre-des #premier-rang img {
+    width: 40%;
+  }
+  #accueil-section #chambre-des #deuxieme-rang img {
+    width: 80%;
+  }
+  #accueil-section #chambre-des .room3, #accueil-section #chambre-des .room4 {
+    display: none;
+  }
+}
 .main_bedroom {
   background-color: #222222;
 }
@@ -441,13 +672,8 @@ textarea {
 
 .maps-ducsman {
   padding-bottom: 50%;
-  position: relative;
-}
-
-.maps-ducsman iframe {
-  height: 350px;
-  width: 800px;
-  top: 70px;
+  padding-left: 20%;
   padding-top: 50px;
-  margin: 0 -20%;
+  margin-right: 70%;
+  filter: grayscale(100%);
 }/*# sourceMappingURL=main.css.map */
