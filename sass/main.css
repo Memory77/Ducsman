@@ -548,13 +548,8 @@ textarea {
 
 .maps-ducsman {
   padding-bottom: 50%;
-  position: relative;
-}
-
-.maps-ducsman iframe {
-  height: 350px;
-  width: 800px;
-  top: 70px;
+  padding-left: 20%;
   padding-top: 50px;
-  margin: 0 -20%;
+  margin-right: 70%;
+  filter: grayscale(100%);
 }/*# sourceMappingURL=main.css.map */
