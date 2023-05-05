@@ -19,74 +19,75 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
         </div>
+        <nav class="nav-mobile">
+
+            <section class="top">
+    
+                <div class="nav-mobile_profile">
+                    <img src="img/logo_ducksman.png" alt="logo">
+                </div>
+    
+                <ul class="nav-mobile_menu">
+    
+                    <li>
+                        <a href="#">
+                            Accueil
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#">
+                            A propos
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#">
+                            Chambres & Suites
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#">
+                            Restaurant
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#">
+                            Centre de bien être 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Actualité
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#">
+                            Contact 
+                        </a>
+                    </li>
+                </ul>
+            </section>
+    
+            <section class="bottom">
+    
+    
+                <div class="nav-mobile_social">
+                   <span class="flaticon-call" id="phone_head"></span>
+                   <span>Informations & Réservations<br><span class="doree" >03 20 01 02 03</span></span>
+                </div>
+    
+            </section>
+    
+        </nav>
+        <div class="mobile-overlay" onclick="togglemenu()">
+        </div>
     </header>
 
-    <nav class="nav-mobile">
-
-        <section class="top">
-
-            <div class="nav-mobile_profile">
-                <img src="img/logo_ducksman.png" alt="logo">
-            </div>
-
-            <ul class="nav-mobile_menu">
-
-                <li>
-                    <a href="#">
-                        Accueil
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        A propos
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        Chambres & Suites
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        Restaurant
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        Centre de bien être 
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Actualité
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        Contact 
-                    </a>
-                </li>
-            </ul>
-        </section>
-
-        <section class="bottom">
-
-
-            <div class="nav-mobile_social">
-               <span class="flaticon-call" id="phone_head"></span>
-               <span>Informations & Réservations<br><span class="doree" >03 20 01 02 03</span></span>
-            </div>
-
-        </section>
-
-    </nav>
-    <div class="mobile-overlay" onclick="togglemenu()">
-    </div>
+    
 
     <header class="header_fixe">
         <img src="img/logo_ducksman.png" alt="logo_ducksman" class="logo_ducsman">
@@ -102,7 +103,7 @@
         </ul> <br>
         </ul> <br> </nav>
         <p class="info_head"><span id="phone_head" class="flaticon-call"></span>
-         <span class="text_head">Informations & Réservations <span class="color_head">03 20 01 02 03</span></span></p>
+         <span class="text_head">Informations & Réservations<br> <span class="color_head">03 20 01 02 03</span></span></p>
     </header>
 
 
@@ -111,12 +112,22 @@
 
     <div id="accueil-section">
         <div id="vitrine">
+            <span class="ti-star"></span>
+            <span class="ti-star"></span>
+            <span class="ti-star"></span>
+            <span class="ti-star"></span>
+            <span class="ti-star"></span>
             <h2> Hotel de Luxe à Paris </h2>
             <h1> L'expérience<br> du luxe</h1>
             <a class="btn btn-general btn-white" href="" role="button">chambres & suites</a>
         </div>
         <div id="about">
             <div class="about-des">
+                <span class="ti-star"></span>
+                <span class="ti-star"></span>
+                <span class="ti-star"></span>
+                <span class="ti-star"></span>
+                <span class="ti-star"></span>
                 <h3>hotel de luxe ducsman</h3>
                 <h2>L'expérience du luxe</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe vero perspiciatis maiores? Libero sint voluptatem accusamus expedita aut nam nesciunt voluptatibus consectetur, quas ea sunt adipisci magni. Voluptas, tempora ad.</p>
@@ -126,7 +137,7 @@
             <img class="img2"src="img/rooms/2.jpg" alt="une chambre">
         </div>
 
-        <div id="chambre-des">
+        <section id="chambre-des">
             <div id="premier-rang">
                 <img src="img/rooms/1.jpg">
                 <p class="text1">150 € / NUIT<br><span class="text-title">Suite Junior</span></p>
@@ -141,10 +152,10 @@
                 <img src="img/rooms/7.jpg"> 
                 <p class="text5">350 € / NUIT<br><span class="text-title">Chambre supérieur</span></p>
             </div>
-        </div>
+        </section>
 
 
-        <div id="services">
+        <section id="services">
             <div class="item-service"><img src="img/restaurant/1.jpg"></div>
             <div class="item-service">
                 <h3>DECOUVERTE</h3>
@@ -173,8 +184,112 @@
                 <br><br><a class="btn btn-general btn-brown" href="" role="button">en savoir plus</a>
             </div>
             <div class="item-service"><img src="img/spa/1.jpg"></div>
-        </div>
+        </section>
+
+
+
+        <section id="options">
+            <div class="options-info">
+                <h1>Options</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi nobis ab doloribus nam sint id aliquid quasi voluptate error libero modi est consequuntur ullam eius, provident impedit nesciunt et cupiditate!</p>
+                <div id="phonebox">
+                    <span class="flaticon-phone"></span>
+                    <div class="phone-info">
+                        <p>Information & Réservation <br></p>
+                        <p class="contactlink">03 20 01 02 03</p>
+                    </div>
+                </div>
+            </div>
+            <div class="options_items">
+                <div class="option_un">
+                    <h3>Petit déjeuner</h3>
+                    <p><span class="prix">30e</span>/jour</p>
+                    <p><span class="ti-check-box"></span>Hotel ut nisan the duru</p>
+                    <p><span class="ti-check-box"></span>Orci miss natoque vasa ince</p>
+                    <p><span class="ti-close"></span>Clean sorem ipsum morbin</p>
+                </div>
+                <div class="option_deux">
+                    <h3>Coffre-fort sécurisé</h3>
+                    <p><span class="prix">15e</span>/jour</p>
+                    <p><span class="ti-check-box"></span>Hotel ut nisan the duru</p>
+                    <p><span class="ti-check-box"></span>Orci miss natoque vasa ince</p>
+                    <p><span class="ti-close"></span>Clean sorem ipsum morbin</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services_plus">
+            <h1>Services en +</h1>
+            <div id="services_grid">
+                <div class="item_splus"><span class="icon ti-export"></span><h2>Transferts</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aliquam? Iusto, possimus optio laudantium? Velit, blanditiis voluptate.</p></div>
+                <div class="item_splus"><span class="icon ti-car"></span><h2>Parking</h2><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae tenetur labore ducimus animi quae? Velit minima dolorum commodi voluptate sapiente soluta consequatur consectetur!.</p></div>
+                <div class="item_splus"><span class="icon flaticon-bed"></span><h2>Room Service</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sunt autem, molestias possimus facere temporibus quam aliquid magnam necessitatibus sint ab provident .</p></div>
+                <div class="item_splus"><span class="icon flaticon-swimming"></span><h2>Piscine</h2><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum aliquam repellat illum quas autem at dolorem, perferendis, dolores iste veniam culpam!</p></div>
+                <div class="item_splus"><span class="icon flaticon-wifi"></span><h2>Accès internet</h2><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo molestiae omnis, repellat laudantium magnam ratione vero eveniet corrupti !</p></div>
+                <div class="item_splus"><span class="icon flaticon-serving-dish"></span><h2>Petit déjeuner</h2><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae totam quidem sed soluta harum voluptas voluptatibus sit quas.</p></div>
+            </div>
+        </section>
     </div>
+
+
+    <!-- <footer>
+        <div class="all_foot">
+            <div class="left_foot">
+                <h4 class="titre_foot">A propos de notre hôtel</h4>
+                Le seul hôtel 5 étoiles de Paris. Elementum sesue the aucan ivestane <br>
+                aliquam usto in the sapien rutrum. <br>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi modi deleniti <br>
+                ullam, quo doloremque laboriosam vel natus sed illum commodi fugiat iure <br>
+                dolores autem maxime odio voluptatum debitis beatae distinctio. <br>
+            </div>
+            <div class="right_foot">
+                <h4 class="right_foot_elem">Contact</h4>
+                <div class="right_foot_elem"> 23 avenue des Nations Unies <br>75001 Paris </div><br>03 20 01 02 03 <br> <span id="phone_foot" class="flaticon-call"></span> <br>info@ducsman.com
+                <span class="ti-instagram"></span>
+                <span class="ti-twitter-alt"></span>
+                <span class="ti-youtube"></span>
+                <span class="ti-facebook"></span>
+                <span class="ti-pinterest"></span>
+            </div>
+        </div>
+            
+        <div class="footer_bottom">
+            <p>Mentions légales- Conditions Générales de Ventes- Politique de confidentialité- <span class="copyright"> Copyright 2023- Ducsman Group </span></p>
+        </div>
+    </footer> -->
+
+    <footer>
+        <div class="all_foot">
+            <div class="left_foot">
+                <h1>À propos de notre hôtel</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi quaerat, numquam debitis tenetur labore pariatur atque, id ipsam nulla, quam officia velit officiis! Maiores voluptate itaque commodi, vitae minima eos.</p>
+                <br>
+                <p>Earum quod voluptatem odit non voluptatibus quia et nisi velit! Nesciunt facilis excepturi quibusdam! Tenetur aut adipisci quos deserunt mollitia quo quaerat?</p>
+            </div>
+            <div class="right_foot">
+                <h1>Contact</h1>
+                <p>23 avenue des Nations Unies<br>76000 Paris</p>
+                <div id="phonebox">
+                    <span class="flaticon-phone white-phone"></span>
+                    <div class="phone-info">
+                        <p><strong>03 20 01 02 03</strong></p>
+                    </div>
+                </div>
+                <ul class="social-icons">
+                    <p>Email: <a href="mailto:contact@monsite.com">info@ducsman.com</a></p>
+                    <li><a href="#"><span class="ti-instagram"></span></a></i></a></li>
+                    <li><a href="#"><span class="ti-twitter-alt"></span></a></li>
+                    <li><a href="#"><span class="ti-youtube"></span></a></li>
+                    <li><a href="#"><span class="ti-pinterest"></span></a></li>
+                </ul>
+            </div>   
+        </div>
+        <div class="footer_bottom">
+             <p class="copyright"><strong>Mentions légales - Conditions Générales de Ventes Politique de confidentialité</strong> - &copy; Copyright 2023 - Ducsman Group</p>
+        </div>
+       
+      </footer>
+    
     <script src="script.js"></script>
 </body>
 </html>
