@@ -10,7 +10,7 @@ body{
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 
-    .header_bedroom{
+    .header_fixe{
         grid-area: 1 / 1 / 2 / 2;
 
     }
@@ -57,12 +57,12 @@ body{
 .pichead_into {
 
     background-image: url(/img/rooms/4.jpg);
-    background-position-y: 90%;
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 200px;
     text-align: center;
+    padding-top: 300px;
+    padding-bottom: 300px;
+
 
     .pichead_title{
         color: white;
@@ -79,7 +79,6 @@ body{
         color: #aa8453;
         font-size: 30px;
     }
-
 }
 
 .blocktext_title{
@@ -133,3 +132,6 @@ body{
 }
 
 
+@media screen and (min-width:350px) and (max-width:450px) {
+
+}

@@ -450,24 +450,6 @@ a:hover {
   background-color: rgb(75, 74, 74);
 }
 
-body {
-  margin: 0px;
-}
-
-.body_bedroom {
-  display: grid;
-  grid-template-columns: 20% 80%;
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
-.body_bedroom .header_bedroom {
-  grid-area: 1/1/2/2;
-}
-.body_bedroom .main_bedroom {
-  grid-area: 1/2/2/3;
-}
-
 /* responsive css accueil */
 @media screen and (max-width: 1100px) {
   #accueil-section {
@@ -491,6 +473,24 @@ body {
     display: none;
   }
 }
+body {
+  margin: 0px;
+}
+
+.body_bedroom {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.body_bedroom .header_fixe {
+  grid-area: 1/1/2/2;
+}
+.body_bedroom .main_bedroom {
+  grid-area: 1/2/2/3;
+}
+
 .main_bedroom {
   background-color: #222222;
 }
@@ -518,12 +518,11 @@ body {
 
 .pichead_into {
   background-image: url(/img/rooms/4.jpg);
-  background-position-y: 90%;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 200px;
   text-align: center;
+  padding-top: 300px;
+  padding-bottom: 300px;
 }
 .pichead_into .pichead_title {
   color: white;
