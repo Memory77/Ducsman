@@ -14,11 +14,19 @@
 }
 body{
     background-color: rgb(22, 22, 22);
-    font-family: 'MaPolice', sans-serif;
+    font-family: 'Flaticon', sans-serif;
 }
 
 
-h1,h2,h3{
+h1,h2,h3, span{
     font-family: 'Flaticon';
     font-weight: 100;
+}
+
+h1{
+    font-size: 40px;
+}
+
+.ti-star{
+    color: gold;
 }

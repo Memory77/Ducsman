@@ -13,6 +13,7 @@ body{
     padding: 10px;
     background-color: #1b1b1b;
     // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   //position: fixed;
 }
 
 
@@ -27,6 +28,7 @@ body{
     background-color: #1b1b1b;
     cursor: pointer;
     transition: 0.4s transform linear;
+    position: fixed;
 }
 
 .header_mobile:hover{

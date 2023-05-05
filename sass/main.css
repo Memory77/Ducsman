@@ -13,12 +13,20 @@
 }
 body {
   background-color: rgb(22, 22, 22);
-  font-family: "MaPolice", sans-serif;
+  font-family: "Flaticon", sans-serif;
 }
 
-h1, h2, h3 {
+h1, h2, h3, span {
   font-family: "Flaticon";
   font-weight: 100;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.ti-star {
+  color: gold;
 }
 
 .resnow {
@@ -90,6 +98,7 @@ body {
   background-color: #1b1b1b;
   cursor: pointer;
   transition: 0.4s transform linear;
+  position: fixed;
 }
 
 .header_mobile:hover {
@@ -294,9 +303,85 @@ a:hover {
     display: none;
   }
 }
-/* vitrine */
+footer {
+  background-color: #333333;
+  color: #fff;
+  width: 80%;
+  float: right;
+}
+footer strong {
+  color: #fff;
+}
+footer #phonebox .white-phone {
+  color: #fff;
+  padding-bottom: 30px;
+}
+footer .all_foot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 60px;
+}
+footer .all_foot .left_foot {
+  width: 40%;
+}
+footer .all_foot .right_foot {
+  margin-right: 30px;
+}
+footer .footer_bottom {
+  background-color: rgb(46, 46, 46);
+  height: 70px;
+}
+
+.social-icons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.social-icons li:last-child {
+  margin-right: 0;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.social-icons a:hover {
+  color: #f00;
+}
+
+.email {
+  margin-top: 10px;
+}
+
+.email a {
+  color: #fff;
+}
+
+.email a:hover {
+  color: #f00;
+}
+
+p.copyright {
+  padding-top: 20px;
+  text-align: center;
+}
+
+/* responsive css */
+@media screen and (max-width: 1100px) {
+  footer {
+    width: 100%;
+  }
+}
 #accueil-section {
-  height: 800vh;
+  height: 630vh;
   width: 80%;
   float: right;
   background-color: rgb(39, 39, 39);
@@ -306,6 +391,7 @@ a:hover {
   text-align: justify;
 }
 
+/* vitrine */
 #vitrine {
   background-image: url("../../img/rooms/roomcomplet.png");
   background-attachment: fixed;
@@ -450,6 +536,133 @@ a:hover {
   background-color: rgb(75, 74, 74);
 }
 
+/* options */
+#options {
+  height: 30vh;
+  width: 100%;
+  margin: 10% 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#options .options-info {
+  width: 35%;
+  margin: 0 20px;
+}
+#options .options_items {
+  display: flex;
+  flex-direction: row;
+}
+#options .prix {
+  color: orange;
+  font-size: 30px;
+}
+#options .ti-check-box {
+  color: orange;
+}
+#options .ti-check-box, #options .ti-close {
+  padding-right: 15px;
+}
+#options h1 {
+  font-size: 40px;
+}
+#options h3 {
+  color: #fff;
+  font-size: 25px;
+}
+#options .option_un, #options .option_deux {
+  background-color: rgb(49, 49, 49);
+  padding: 0 40px;
+  margin: 0 10px;
+}
+
+/* services en plus */
+#services_plus {
+  height: 30vh;
+  margin: 5%;
+}
+
+#services_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 300px);
+  gap: 20px;
+}
+#services_grid .item_splus {
+  border: 2px solid rgb(54, 54, 54);
+  padding: 20px;
+  color: #fff;
+}
+#services_grid .item_splus .icon {
+  color: orange;
+  font-size: 60px;
+  padding: 6px;
+}
+
+/* responsive css accueil */
+@media screen and (max-width: 1100px) {
+  #accueil-section {
+    width: 100%;
+  }
+  #accueil-section #services {
+    padding: 50px;
+  }
+  #accueil-section .item-service img {
+    height: 100%;
+  }
+  #accueil-section .item-service {
+    height: 200px;
+  }
+  #accueil-section .item-service p {
+    display: none;
+  }
+  #accueil-section .item-service .btn-general {
+    display: none;
+  }
+  #accueil-section #options {
+    height: 90vh;
+  }
+  #accueil-section .options-info {
+    width: 40%;
+  }
+  #accueil-section .options_items {
+    display: flex;
+    flex-direction: column;
+  }
+  #accueil-section .options_items .option_un, #accueil-section .options_items .option_deux {
+    padding: 20px 100px;
+    margin: 10px 0;
+  }
+  #accueil-section .item_splus {
+    border: none;
+  }
+  #accueil-section .item_splus p {
+    display: none;
+  }
+}
+@media screen and (max-width: 1350px) {
+  #accueil-section .item-service img {
+    height: 100%;
+  }
+  #accueil-section .img1, #accueil-section .img2 {
+    display: none;
+  }
+  #accueil-section .btn-general {
+    padding: 1px 26px;
+  }
+  #accueil-section #chambre-des {
+    height: 130vh;
+  }
+  #accueil-section #chambre-des #premier-rang img {
+    width: 40%;
+  }
+  #accueil-section #chambre-des #deuxieme-rang img {
+    width: 80%;
+  }
+  #accueil-section #chambre-des .room3, #accueil-section #chambre-des .room4 {
+    display: none;
+  }
+}
 body {
   margin: 0px;
 }
@@ -468,29 +681,6 @@ body {
   grid-area: 1/2/2/3;
 }
 
-/* responsive css accueil */
-@media screen and (max-width: 1100px) {
-  #accueil-section {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 1350px) {
-  #accueil-section .img1, #accueil-section .img2 {
-    display: none;
-  }
-  #accueil-section #chambre-des {
-    height: 130vh;
-  }
-  #accueil-section #chambre-des #premier-rang img {
-    width: 40%;
-  }
-  #accueil-section #chambre-des #deuxieme-rang img {
-    width: 80%;
-  }
-  #accueil-section #chambre-des .room3, #accueil-section #chambre-des .room4 {
-    display: none;
-  }
-}
 .main_bedroom {
   background-color: #222222;
 }
