@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +11,8 @@
 </head>
 <body>
 
-    <!-------------- NAVBAR ------------>
-    <header class="header">
+   <!--- NAVBAR --->
+   <header class="header">
         <div class="header_mobile" onclick="togglemenu()">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-6 h-6">
@@ -21,38 +21,38 @@
         </div>
         <nav class="nav-mobile">
 
-            <section class="top">
-    
+            <div class="top">
+
                 <div class="nav-mobile_profile">
                     <img src="img/logo_ducksman.png" alt="logo">
                 </div>
-    
+
                 <ul class="nav-mobile_menu">
-    
+
                     <li>
                         <a href="accueil.html">
                             Accueil
                         </a>
                     </li>
-    
+
                     <li>
                         <a href="#">
                             A propos
                         </a>
                     </li>
-    
+
                     <li>
                         <a href="chambre.html">
                             Chambres & Suites
                         </a>
                     </li>
-    
+
                     <li>
                         <a href="#">
                             Restaurant
                         </a>
                     </li>
-    
+
                     <li>
                         <a href="#">
                             Centre de bien être 
@@ -63,49 +63,45 @@
                             Actualité
                         </a>
                     </li>
-    
+
                     <li>
                         <a href="contact.html">
                             Contact 
                         </a>
                     </li>
                 </ul>
-            </section>
-    
-            <section class="bottom">
-    
-    
+            </div>
+            <div class="bottom">
+
+
                 <div class="nav-mobile_social">
-                   <span class="flaticon-call" id="phone_head"></span>
-                   <span>Informations & Réservations<br><span class="doree" >03 20 01 02 03</span></span>
+                <span class="flaticon-call phone_head"></span>
+                <span>Informations & Réservations<br><span class="doree" >03 20 01 02 03</span></span>
                 </div>
-    
-            </section>
-    
+            </div>
         </nav>
-        <div class="mobile-overlay" onclick="togglemenu()">
-        </div>
     </header>
 
-    
+
+    <div class="mobile-overlay" onclick="togglemenu()">
+    </div>
+
 
     <header class="header_fixe">
         <img src="img/logo_ducksman.png" alt="logo_ducksman" class="logo_ducsman">
-        <ul class="liste_head">
-      <nav class="barre_nav"><ul class="liste_head">
-            <li class="li_head"> <a href="accueil.html" class="element_head">ACCUEIL</a></li>
-            <li class="li_head">A PROPOS </li>
-            <li class="li_head"> <a href="chambre.html" class="element_head">CHAMBRES & SUITES</a></li>
-            <li class="li_head">RESTAURANT</li>
-            <li class="li_head">CENTRE DE BIEN-ÊTRE</li>
-            <li class="li_head">ACTUALIT&Eacute;</li>
-            <li class="li_head"> <a href="contact.html" class="element_head">CONTACT</a></li>
-        </ul> <br>
-        </ul> <br> </nav>
-        <p class="info_head"><span id="phone_head" class="flaticon-call"></span>
+        <nav class="barre_nav"><ul class="liste_head">
+                <li class="li_head"> <a href="accueil.html" class="element_head">ACCUEIL</a></li>
+                <li class="li_head">A PROPOS </li>
+                <li class="li_head"> <a href="chambre.html" class="element_head">CHAMBRES & SUITES</a></li>
+                <li class="li_head">RESTAURANT</li>
+                <li class="li_head">CENTRE DE BIEN-ÊTRE</li>
+                <li class="li_head">ACTUALIT&Eacute;</li>
+                <li class="li_head"> <a href="contact.html" class="element_head">CONTACT</a></li>
+            </ul> <br>
+        </nav>
+        <p class="info_head"><span class="flaticon-call phone_head"></span>
         <span class="text_head">Informations & Réservations<br> <span class="color_head">03 20 01 02 03</span></span></p>
     </header>
-
 
 
     <!-- page accueil -->
@@ -133,30 +129,30 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe vero perspiciatis maiores? Libero sint voluptatem accusamus expedita aut nam nesciunt voluptatibus consectetur, quas ea sunt adipisci magni. Voluptas, tempora ad.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam minima id sequi maiores assumenda laudantium praesentium, quaerat in ullam quis perferendis excepturi amet repudiandae. Optio error ut minus est exercitationem.</p>
             </div>
-            <img class="img1"src="img/rooms/8.jpg" alt="une chambre">
-            <img class="img2"src="img/rooms/2.jpg" alt="une chambre">
+            <img class="img1" src="img/rooms/8.jpg" alt="une chambre">
+            <img class="img2" src="img/rooms/2.jpg" alt="une chambre">
         </div>
 
-        <section id="chambre-des">
+        <div id="chambre-des">
             <div id="premier-rang">
-                <img src="img/rooms/1.jpg">
+                <img src="img/rooms/1.jpg" alt="room">
                 <p class="text1">150 € / NUIT<br><span class="text-title">Suite Junior</span></p>
-                <img src="img/rooms/2.jpg">
+                <img src="img/rooms/2.jpg" alt="room">
                 <p class="text2">200 € / NUIT<br><span class="text-title">Chambre familiale</span></p>
-                <img class="room3"src="img/rooms/3.jpg">
+                <img class="room3" src="img/rooms/3.jpg" alt="room">
                 <p class="text3">250 € / NUIT<br><span class="text-title">Chambre double</span></p>
             </div>
             <div id="deuxieme-rang">
-                <img class="room4"src="img/rooms/4.jpg">
+                <img class="room4" src="img/rooms/4.jpg" alt="room">
                 <p class="text4">300 € / NUIT<br><span class="text-title">Chambre deluxe</span></p>
-                <img src="img/rooms/7.jpg"> 
+                <img src="img/rooms/7.jpg" alt="room"> 
                 <p class="text5">350 € / NUIT<br><span class="text-title">Chambre supérieur</span></p>
             </div>
-        </section>
+        </div>
 
 
-        <section id="services">
-            <div class="item-service"><img src="img/restaurant/1.jpg"></div>
+        <div id="services">
+            <div class="item-service"><img src="img/restaurant/1.jpg" alt="restaurant"></div>
             <div class="item-service">
                 <h3>DECOUVERTE</h3>
                 <h2>Le Restaurant</h2>
@@ -169,8 +165,8 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, tempora magnam quos delectus sunt et nihil unde blanditiis, expedita impedit perspiciatis odit quaerat, in iste voluptate quo fuga minima consequuntur!</p>
                 <br><br><a class="btn btn-general btn-brown" href="" role="button">en savoir plus</a>
             </div>
-            <div class="item-service"><img src="img/spa/3.jpg"></div>
-            <div class="item-service"><img src="img/spa/2.jpg"></div>
+            <div class="item-service"><img src="img/spa/3.jpg" alt="spa"></div>
+            <div class="item-service"><img src="img/spa/2.jpg" alt="spa"></div>
             <div class="item-service">
                 <h3>EPANOUISSEMENT</h3>
                 <h2>Centre de fitness</h2>
@@ -183,16 +179,16 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, quod exercitationem hic modi quam recusandae molestias, eveniet aperiam et architecto itaque assumenda? Voluptatum ipsa magnam similique, corporis illo soluta dolor!</p>
                 <br><br><a class="btn btn-general btn-brown" href="" role="button">en savoir plus</a>
             </div>
-            <div class="item-service"><img src="img/spa/1.jpg"></div>
-        </section>
+            <div class="item-service"><img src="img/spa/1.jpg" alt="spa"></div>
+        </div>
 
 
 
-        <section id="options">
+        <div id="options">
             <div class="options-info">
                 <h1>Options</h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi nobis ab doloribus nam sint id aliquid quasi voluptate error libero modi est consequuntur ullam eius, provident impedit nesciunt et cupiditate!</p>
-                <div id="phonebox">
+                <div class="phonebox">
                     <span class="flaticon-phone"></span>
                     <div class="phone-info">
                         <p>Information & Réservation <br></p>
@@ -216,9 +212,9 @@
                     <p><span class="ti-close"></span>Clean sorem ipsum morbin</p>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section id="services_plus">
+        <div id="services_plus">
             <h1>Services en +</h1>
             <div id="services_grid">
                 <div class="item_splus"><span class="icon ti-export"></span><h2>Transferts</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aliquam? Iusto, possimus optio laudantium? Velit, blanditiis voluptate.</p></div>
@@ -228,12 +224,12 @@
                 <div class="item_splus"><span class="icon flaticon-wifi"></span><h2>Accès internet</h2><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo molestiae omnis, repellat laudantium magnam ratione vero eveniet corrupti !</p></div>
                 <div class="item_splus"><span class="icon flaticon-serving-dish"></span><h2>Petit déjeuner</h2><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae totam quidem sed soluta harum voluptas voluptatibus sit quas.</p></div>
             </div>
-        </section>
+        </div>
     </div>
 
     <!-- footer -->
     <footer>
-        <div class="all_foot">
+        <div class="all_foot marg-foot">
             <div class="left_foot">
                 <h1>À propos de notre hôtel</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi quaerat, numquam debitis tenetur labore pariatur atque, id ipsam nulla, quam officia velit officiis! Maiores voluptate itaque commodi, vitae minima eos.</p>
@@ -249,9 +245,9 @@
                         <p><strong>03 20 01 02 03</strong></p>
                     </div>
                 </div>
+                 <p>Email: <a href="mailto:contact@monsite.com">info@ducsman.com</a></p>
                 <ul class="social-icons">
-                    <p>Email: <a href="mailto:contact@monsite.com">info@ducsman.com</a></p>
-                    <li><a href="#"><span class="ti-instagram"></span></a></i></a></li>
+                    <li><a href="#"><span class="ti-instagram"></span></a></li>
                     <li><a href="#"><span class="ti-twitter-alt"></span></a></li>
                     <li><a href="#"><span class="ti-youtube"></span></a></li>
                     <li><a href="#"><span class="ti-pinterest"></span></a></li>

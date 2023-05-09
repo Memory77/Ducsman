@@ -13,88 +13,85 @@
 
 <body>
 
-    <!-------------- NAVBAR ------------>
-    <header class="header">
-        <div class="header_mobile" onclick="togglemenu()">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-        </div>
-        <nav class="nav-mobile">
-
-            <section class="top">
-    
-                <div class="nav-mobile_profile">
-                    <img src="img/logo_ducksman.png" alt="logo">
-                </div>
-    
-                <ul class="nav-mobile_menu">
-    
-                    <li>
-                        <a href="accueil.html">
-                            Accueil
-                        </a>
-                    </li>
-    
-                    <li>
-                        <a href="#">
-                            A propos
-                        </a>
-                    </li>
-    
-                    <li>
-                        <a href="chambre.html">
-                            Chambres & Suites
-                        </a>
-                    </li>
-    
-                    <li>
-                        <a href="#">
-                            Restaurant
-                        </a>
-                    </li>
-    
-                    <li>
-                        <a href="#">
-                            Centre de bien être 
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Actualité
-                        </a>
-                    </li>
-    
-                    <li>
-                        <a href="contact.html">
-                            Contact 
-                        </a>
-                    </li>
-                </ul>
-            </section>
-    
-            <section class="bottom">
-    
-    
-                <div class="nav-mobile_social">
-                   <span class="flaticon-call" id="phone_head"></span>
-                   <span>Informations & Réservations<br><span class="doree" >03 20 01 02 03</span></span>
-                </div>
-    
-            </section>
-    
-        </nav>
-    </header>
-
-    
-    <div class="mobile-overlay" onclick="togglemenu()">
+   <!--- NAVBAR --->
+   <header class="header">
+    <div class="header_mobile" onclick="togglemenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
     </div>
+    <nav class="nav-mobile">
 
-    <header class="header_fixe">
-        <img src="img/logo_ducksman.png" alt="logo_ducksman" class="logo_ducsman">
-        <ul class="liste_head">
-      <nav class="barre_nav"><ul class="liste_head">
+        <div class="top">
+
+            <div class="nav-mobile_profile">
+                <img src="img/logo_ducksman.png" alt="logo">
+            </div>
+
+            <ul class="nav-mobile_menu">
+
+                <li>
+                    <a href="accueil.html">
+                        Accueil
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        A propos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="chambre.html">
+                        Chambres & Suites
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Restaurant
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Centre de bien être 
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Actualité
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact 
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom">
+
+
+            <div class="nav-mobile_social">
+            <span class="flaticon-call phone_head"></span>
+            <span>Informations & Réservations<br><span class="doree" >03 20 01 02 03</span></span>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<div class="mobile-overlay" onclick="togglemenu()">
+</div>
+
+
+<header class="header_fixe">
+    <img src="img/logo_ducksman.png" alt="logo_ducksman" class="logo_ducsman">
+    <nav class="barre_nav"><ul class="liste_head">
             <li class="li_head"> <a href="accueil.html" class="element_head">ACCUEIL</a></li>
             <li class="li_head">A PROPOS </li>
             <li class="li_head"> <a href="chambre.html" class="element_head">CHAMBRES & SUITES</a></li>
@@ -103,10 +100,10 @@
             <li class="li_head">ACTUALIT&Eacute;</li>
             <li class="li_head"> <a href="contact.html" class="element_head">CONTACT</a></li>
         </ul> <br>
-        </ul> <br> </nav>
-        <p class="info_head"><span id="phone_head" class="flaticon-call"></span>
-         <span class="text_head">Informations & Réservations<br> <span class="color_head">03 20 01 02 03</span></span></p>
-    </header>
+    </nav>
+    <p class="info_head"><span class="flaticon-call phone_head"></span>
+    <span class="text_head">Informations & Réservations<br> <span class="color_head">03 20 01 02 03</span></span></p>
+</header>
 
     <!-------- page contact ------->
 
@@ -128,8 +125,8 @@
             <div id="envelopbox">
                 <span class="flaticon-envelope"></span>
                 <div class="mail-info">
-                    <p>E-mail<b>
-                            <p class="contactlink"> <a href="https://outlook.live.com/owa/">info@ducsman-group.com</a>
+                    <p>E-mail<br></p>
+                            <p class="contactlink"><a href="https://outlook.live.com/owa/">info@ducsman-group.com</a>
                             </p>
                 </div>
             </div>
@@ -146,34 +143,34 @@
             <h1>Restons en contact</h1>
             <form action="envoyer" method="post">
 
-                <label for="Votre nom">
-                    <div class="champ-id"> Votre nom*</div>
+                <label for="nom">
+                <p>Votre nom :</p>
                 </label>
-                <input type="text id=" Votre nom="Votre nom" required>
+                <input type="text" id="nom">
 
-                <label for="votre e-mail">
+                <label for="email">
                     <div class="champ-id">Votre e-mail*</div>
                 </label>
-                <input type="text id=" Votre e-mail="Votre e-mail" required>
+                <input type="text" id="nom">
 
                 <br>
 
-                <label for="votre numéro de téléphone">
-                    <div class="champ-id">Votre numéro de téléphone*</div>
+                <label for="tel">
+                    <p>Votre numéro de téléphone*</p>
                 </label>
-                <input type="text id=" Votre numéro de téléphone="Votre numéro de téléphone" required>
+                <input type="text" id="tel">
 
-                <label for="Sujet">
-                    <div class="champ-id">Sujet</div>
+                <label for="sujet">
+                    <p>Sujet :</p>
                 </label>
-                <input type="text id=" Sujet="Sujet" required>
+                <input type="text" id="sujet">
 
                 <br>
 
-                <label for="Message">
+                <label for="message">
                     <div class="champ-id">Message*</div>
                 </label>
-                <textarea id="Message" name="Message" rows="5" cols="33"></textarea>
+                <textarea id="message" name="Message" rows="5" cols="33"></textarea>
 
                 <p>
                     <button div class="btn-brown" type="envoyer">ENVOYER</button>
@@ -190,7 +187,7 @@
 
         <!-- footer -->
     <footer>
-        <div class="all_foot">
+        <div class="all_foot marg-foot">
             <div class="left_foot">
                 <h1>À propos de notre hôtel</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi quaerat, numquam debitis tenetur labore pariatur atque, id ipsam nulla, quam officia velit officiis! Maiores voluptate itaque commodi, vitae minima eos.</p>

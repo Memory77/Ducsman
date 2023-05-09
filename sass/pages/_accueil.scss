@@ -1,5 +1,5 @@
 #accueil-section {
-    height: 650vh;
+    height: 660vh;
     width: 80%;
     float: right;
     background-color: rgb(39, 39, 39);
@@ -348,8 +348,10 @@
 }
 
 
-@media screen and (max-width: 1800px){
-    #services_plus{
-        // padding-bottom: 200px;
+@media screen and (min-width: 1700px){
+    
+
+    #accueil-section{
+        height: 620vh;
     }
 }
