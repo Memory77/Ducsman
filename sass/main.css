@@ -89,8 +89,8 @@ body {
 }
 
 .header_mobile {
-  height: 40px;
-  width: 40px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -106,8 +106,8 @@ body {
 }
 
 .header svg {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   stroke: #fff;
 }
 
@@ -310,6 +310,9 @@ footer {
   float: right;
   margin-top: 30px;
 }
+footer .footer_bottom p {
+  margin-left: 50px;
+}
 footer strong {
   color: #fff;
 }
@@ -380,9 +383,12 @@ p.copyright {
   footer .all_foot {
     margin-left: 200px;
   }
+  footer .all_foot .footer_bottom p {
+    margin-left: 300px;
+  }
 }
 #accueil-section {
-  height: 630vh;
+  height: 650vh;
   width: 80%;
   float: right;
   background-color: rgb(39, 39, 39);
@@ -466,27 +472,23 @@ p.copyright {
 }
 #chambre-des .text3 {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 10px;
+  color: #fff;
+  float: right;
+  padding: 29% 10% 50% 60%;
 }
 #chambre-des .text4 {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 10px;
+  color: #fff;
+  float: left;
+  padding: 300px 0;
+  padding-right: 60%;
 }
 #chambre-des .text5 {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 10px;
+  color: #fff;
+  float: right;
+  padding: 300px 0;
+  padding-left: 60%;
 }
 
 #premier-rang {
@@ -579,7 +581,6 @@ p.copyright {
 
 /* services en plus */
 #services_plus {
-  height: 30vh;
   margin: 5%;
 }
 
@@ -631,7 +632,7 @@ p.copyright {
     flex-direction: column;
   }
   #accueil-section .options_items .option_un, #accueil-section .options_items .option_deux {
-    padding: 20px 100px;
+    padding: 50px 90px;
     margin: 10px 0;
   }
   #accueil-section .item_splus {
@@ -662,6 +663,12 @@ p.copyright {
   }
   #accueil-section #chambre-des .room3, #accueil-section #chambre-des .room4 {
     display: none;
+  }
+  #accueil-section #chambre-des .text5, #accueil-section #chambre-des .text2 {
+    display: none;
+  }
+  #accueil-section #services_plus, #accueil-section #options {
+    padding-bottom: 110px;
   }
 }
 body {
@@ -778,6 +785,8 @@ body {
   flex-direction: row;
   justify-content: center;
   background-color: rgb(39, 39, 39);
+  width: 80%;
+  float: right;
 }
 
 h1 {
@@ -834,6 +843,7 @@ a {
 
 .btn-brown {
   background-color: burlywood;
+  padding: 10px 20px;
   color: white;
 }
 
@@ -860,10 +870,25 @@ textarea {
   flex-direction: row;
 }
 
+iframe {
+  padding-top: 50px;
+}
+
 .maps-ducsman {
-  padding-bottom: 50%;
-  padding-left: 20%;
+  padding-bottom: 50px;
   padding-top: 50px;
   margin-right: 70%;
   filter: grayscale(100%);
+}
+
+@media screen and (max-width: 1100px) {
+  #contact-section {
+    width: 95%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  iframe {
+    padding-top: 50px;
+    margin-left: 23%;
+  }
 }/*# sourceMappingURL=main.css.map */

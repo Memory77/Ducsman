@@ -1,5 +1,5 @@
 #accueil-section {
-    height: 630vh;
+    height: 650vh;
     width: 80%;
     float: right;
     background-color: rgb(39, 39, 39);
@@ -96,27 +96,23 @@
       }
       .text3 {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: rgba(255, 255, 255, 0.5);
-        padding: 10px;
+        color: #fff;
+        float: right;
+        padding: 29% 10% 50% 60%;
       }
       .text4 {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: rgba(255, 255, 255, 0.5);
-        padding: 10px;
+        color: #fff;
+        float: left;
+        padding: 300px 0;
+        padding-right: 60%;
       }
       .text5 {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: rgba(255, 255, 255, 0.5);
-        padding: 10px;
+        color: #fff;
+        float: right;
+        padding: 300px 0;
+        padding-left: 60%;
       }
 }
 
@@ -222,8 +218,8 @@
 
 /* services en plus */
 #services_plus{
-    height: 30vh;
     margin: 5%;
+
     
 }
 #services_grid{
@@ -289,7 +285,7 @@
             flex-direction: column;
 
             .option_un, .option_deux{
-                padding: 20px 100px;
+                padding: 50px 90px;
                 margin: 10px 0;
             }
         }
@@ -306,7 +302,7 @@
 @media screen and (max-width: 1350px) {
 
     #accueil-section{
-
+        
       .item-service img{
             height: 100%;
 
@@ -328,18 +324,32 @@
             height: 130vh;
 
             #premier-rang img{
-                    width: 40%;
+                width: 40%;
+                    
             }
             #deuxieme-rang img{
                 width: 80%;
+                
             }
             .room3, .room4{
             display: none;
             }
-            
-        
+            .text5, .text2{
+                display: none;
+            }
+           
         }
+
+        #services_plus, #options{
+            padding-bottom: 110px;
+        }
+       
     }
 }
 
 
+@media screen and (max-width: 1800px){
+    #services_plus{
+        // padding-bottom: 200px;
+    }
+}
