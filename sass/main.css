@@ -317,7 +317,7 @@ footer .footer_bottom p {
 footer strong {
   color: #fff;
 }
-footer #phonebox .white-phone {
+footer .phonebox .white-phone {
   color: #fff;
   padding-bottom: 30px;
 }
@@ -336,6 +336,11 @@ footer .all_foot .right_foot {
 footer .footer_bottom {
   background-color: rgb(46, 46, 46);
   height: 70px;
+}
+
+.phonebox {
+  display: flex;
+  flex-direction: row;
 }
 
 .social-icons {
@@ -799,6 +804,7 @@ p.copyright {
   background-color: rgb(39, 39, 39);
   width: 80%;
   float: right;
+  color: grey;
 }
 
 h1 {
@@ -849,7 +855,8 @@ a {
   font-size: 30px;
 }
 
-.champ-id {
+input {
+  background-color: gray;
   color: grey;
 }
 

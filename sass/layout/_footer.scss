@@ -13,7 +13,7 @@ footer {
         color: #fff;
     }
 
-    #phonebox .white-phone{
+    .phonebox .white-phone{
         color: #fff;
         padding-bottom: 30px;
     }
@@ -39,7 +39,12 @@ footer {
     
   }
   
-  
+  .phonebox{
+    display: flex;
+    flex-direction: row;
+
+  }
+
   .social-icons {
     list-style: none;
     margin: 0;
