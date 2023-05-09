@@ -218,7 +218,7 @@ body {
   font-size: 20px;
 }
 
-#phone_head {
+.phone_head {
   font-size: 4vh;
   color: #aa8446;
   align-self: center;
@@ -262,7 +262,7 @@ a:hover {
   color: #aa8453;
 }
 
-#phone_head {
+.phone_head {
   font-size: 4vh;
   color: #97764b;
   align-self: center;
@@ -664,26 +664,8 @@ p.copyright {
     display: none;
   }
 }
-body {
-  margin: 0px;
-}
-
-.body_bedroom {
-  display: grid;
-  grid-template-columns: 20% 80%;
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
-.body_bedroom .header_fixe {
-  grid-area: 1/1/2/2;
-}
-.body_bedroom .main_bedroom {
-  grid-area: 1/2/2/3;
-}
-
 .main_bedroom {
-  background-color: #222222;
+  background-color: rgb(39, 39, 39);
 }
 .main_bedroom .h1-2 {
   color: white;
@@ -701,10 +683,6 @@ body {
 .main_bedroom p, .main_bedroom li {
   color: #7d7d7d;
   list-style: none;
-}
-.main_bedroom #litlogo {
-  color: #aa8453;
-  padding-right: 20px;
 }
 
 .pichead_into {
@@ -736,6 +714,7 @@ body {
 
 .blocktext {
   margin-left: 200px;
+  margin-bottom: 250px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
@@ -759,6 +738,10 @@ body {
 .blocktext .blocktext_left_checks h3 {
   margin: 18px 18px;
 }
+.blocktext .blocktext_left_checks .ti-check {
+  color: #aa8453;
+  padding-right: 20px;
+}
 .blocktext .blocktext_right {
   padding-left: 150px;
 }
@@ -772,7 +755,21 @@ body {
 .blocktext .blocktext_right h3 {
   margin: 18px 18px;
 }
+.blocktext .blocktext_right .litlogo {
+  color: #aa8453;
+  padding-right: 20px;
+}
 
+@media screen and (max-width: 1100px) {
+  .main_bedroom {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .main_bedroom {
+    margin-left: 20%;
+  }
+}
 #contact-section {
   display: flex;
   flex-direction: row;

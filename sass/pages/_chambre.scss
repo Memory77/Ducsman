@@ -1,30 +1,6 @@
-body{
-    margin: 0px;
-}
-
-
-.body_bedroom{
-    display: grid;
-    grid-template-columns: 20% 80%;
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-
-    .header_fixe{
-        grid-area: 1 / 1 / 2 / 2;
-
-    }
-
-    .main_bedroom{
-        grid-area: 1 / 2 / 2 / 3;
-
-    }
-}
-
-
 .main_bedroom{
 
-    background-color: #222222;
+    background-color: rgb(39, 39, 39);
 
     .h1-2{
         color: white;
@@ -46,12 +22,6 @@ body{
         color: #7d7d7d;
         list-style: none;
     }
-
-    #litlogo{
-        color: #aa8453;
-        padding-right: 20px;
-    }
-
 }
 
 .pichead_into {
@@ -88,6 +58,7 @@ body{
 
 .blocktext{
     margin-left: 200px;
+    margin-bottom: 250px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
@@ -112,6 +83,11 @@ body{
         h3{
             margin: 18px 18px;
         }
+
+        .ti-check{
+            color: #aa8453;
+            padding-right: 20px;
+        }
     }
 
     .blocktext_right{
@@ -127,11 +103,26 @@ body{
         h3{
             margin: 18px 18px;
         }
+
+        .litlogo{
+            color: #aa8453;
+            padding-right: 20px;
+        }
     }
 
 }
 
 
-@media screen and (min-width:350px) and (max-width:450px) {
+@media screen and (max-width: 1100px) {
+    .main_bedroom{
+        width: 100%;
 
+        }
+}
+
+
+@media screen and (min-width: 1100px){
+    .main_bedroom{
+        margin-left: 20%;
+        }
 }
